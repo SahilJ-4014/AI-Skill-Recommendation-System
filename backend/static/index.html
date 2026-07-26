@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Recommendation System</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Skill Recommendation System</h1>
+
+    <p class="subtitle">
+        Find the best skills to learn for freelancing using AI.
+    </p>
+
+    <div class="card">
+
+        <label>Current Skills</label>
+
+        <textarea
+            id="skills"
+            placeholder="Example: HTML, CSS, JavaScript"></textarea>
+
+        <label>Experience Level</label>
+
+        <select id="experience">
+
+            <option value="">Select Experience</option>
+
+            <option>Beginner</option>
+
+            <option>Intermediate</option>
+
+            <option>Advanced</option>
+
+        </select>
+
+        <label>Career Goal</label>
+
+        <select id="goal">
+
+            <option value="">Select Goal</option>
+
+            <option>Frontend Developer</option>
+
+            <option>Backend Developer</option>
+
+            <option>Full Stack Developer</option>
+
+            <option>Python Developer</option>
+
+            <option>AI Engineer</option>
+
+            <option>Data Scientist</option>
+
+            <option>Android Developer</option>
+
+            <option>UI/UX Designer</option>
+
+        </select>
+
+        <div class="button-group">
+
+    <button id="generateBtn">
+        Generate Recommendation
+    </button>
+
+    <button id="historyBtn">
+        View History
+    </button>
+
+</div>
+
+    </div>
+
+    <div id="loading">
+        Generating AI Recommendation...
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skill Recommendation Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Skill Recommendation System</h1>
+
+    <h3 id="welcomeText"></h3>
+
+    <input
+        type="text"
+        id="skills"
+        placeholder="Enter your skills (Example: HTML, CSS, JavaScript)"
+    >
+
+    <select id="experience">
+        <option value="">Select Experience</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+    </select>
+
+    <input
+        type="text"
+        id="goal"
+        placeholder="Career Goal"
+    >
+
+    <div class="button-group">
+
+        <button id="generateBtn">
+            Generate Recommendation
+        </button>
+
+        <button id="historyBtn">
+            View History
+        </button>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <div id="loading" style="display:none;">
+        <p>Generating Recommendation...</p>
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
